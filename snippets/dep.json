@@ -1,0 +1,60 @@
+{
+    "Required": {
+        "prefix": "required",
+        "body": [
+            "required = [",
+            "\t\"${1:github.com/example/pkg}\",",
+            "]"
+        ],
+        "description": "Require a package that is not imported by your code."
+    },
+    "Ignored": {
+        "prefix": "ignored",
+        "body": [
+            "ignored = [",
+            "\t\"${1:github.com/example/pkg/*}\",",
+            "]"
+        ],
+        "description": "Ignore a package, it is not used to calculate dependencies and is not vendored. Wildcards are supported, for example github.com/example/pkg/*"
+    },
+    "Constraint": {
+        "prefix": "constraint",
+        "body": [
+            "[[constraint]]",
+            "  name = \"${1:github.com/example/pkg}\"",
+            "  source = \"${2:https://github.com/example-fork/pkg.git}\"",
+            "  branch = \"${3:master}\"",
+            "  revision = \"${4:abc1234}\"",
+            "  version = \"${5:>=1.0.0,<2.0.0}\""
+        ],
+        "description": "Use a specific branch, version range, revision or alternate source for a project. Only applies to required and imported projects."
+    },
+    "Override": {
+        "prefix": "override",
+        "body": [
+            "[[override]]",
+            "  name = \"${1:github.com/example/pkg}\"",
+            "  source = \"${2:https://github.com/example-fork/pkg.git}\"",
+            "  branch = \"${3:master}\"",
+            "  revision = \"${4:abc1234}\"",
+            "  version = \"${5:>=1.0.0,<2.0.0}\""
+        ],
+        "description": "Use a specific branch, version range, revision or alternate source for a project.\n\nWARNING: Overrides only affect YOUR vendor directory, dep ignores overrides for consumers of your library."
+    },
+    "Global Metadata": {
+        "prefix":"metadata (global)",
+        "body": [
+            "[metadata]",
+            "  ${1:key} = \"${2:value}\""
+        ],
+        "description": "Define global key-value pairs that are not used by dep, and are intended for use by other tools that read the dep configuration file."
+    },
+    "Project Metadata": {
+        "prefix":"metadata (constraint)",
+        "body": [
+            "[constraint.metadata]",
+            "  ${1:key} = \"${2:value}\""
+        ],
+        "description": "Define constraint-level key-value pairs that are not used by dep, and are intended for use by other tools that read the dep configuration file. Must be defined within a [[constraint]] stanza."
+    }
+}

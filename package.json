@@ -1,0 +1,59 @@
+{
+    "name": "dep",
+    "displayName": "dep",
+    "description": "Go Dependency Manager (dep) support",
+    "keywords": [
+        "dep",
+        "go",
+        "golang",
+        "dependency"
+    ],
+    "version": "0.0.1",
+    "preview": true,
+    "icon": "images/dep-icon.png",
+    "publisher": "carolynvs",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "qna": "false",
+    "galleryBanner": {
+        "color": "#000000",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "homepage": "https://carolynvs.github.io/vscode-dep/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carolynvs/vscode-dep"
+    },
+    "bugs": "https://github.com/carolynvs/vscode-dep/issues",
+    "contributes": {
+        "languages": [
+            {
+                "id": "dep",
+                "filenames": [
+                    "Gopkg.toml",
+                    "Gopkg.lock"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dep",
+                "scopeName": "text.toml.dep",
+                "path": "./syntaxes/dep.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "dep",
+                "path": "./snippets/dep.json"
+            }
+        ]
+    }
+}
