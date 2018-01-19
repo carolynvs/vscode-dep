@@ -1,1 +1,1 @@
-Images courtesy of [Ashley McNamara](https://github.com/ashleymcnamara/gophers).
+Gopher images courtesy of [Ashley McNamara](https://github.com/ashleymcnamara/gophers).
