@@ -36,8 +36,7 @@
             {
                 "id": "dep",
                 "filenames": [
-                    "Gopkg.toml",
-                    "Gopkg.lock"
+                    "Gopkg.toml"
                 ],
                 "configuration": "./language-configuration.json"
             }
