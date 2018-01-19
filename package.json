@@ -13,7 +13,7 @@
     "icon": "images/dep-icon.png",
     "publisher": "carolynvs",
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.8.0"
     },
     "categories": [
         "Languages",
