@@ -56,5 +56,26 @@
             "  ${1:key} = \"${2:value}\""
         ],
         "description": "Define constraint-level key-value pairs that are not used by dep, and are intended for use by other tools that read the dep configuration file. Must be defined within a [[constraint]] stanza."
+    },
+    "Global Prune": {
+        "prefix": "prune (global)",
+        "body": [
+            "[prune]",
+            "  non-go = ${1:true}",
+            "  go-tests = ${2:true}",
+            "  unused-packages = ${3:true}"
+        ],
+        "description": "Apply global rules for pruning the vendor directory."
+    },
+    "Project Prune": {
+        "prefix": "prune (project)",
+        "body": [
+            "[[prune.project]]",
+            "  name = \"${1:github.com/example/pkg}\"",
+            "  non-go = ${2:true}",
+            "  go-tests = ${3:true}",
+            "  unused-packages = ${4:true}"
+        ],
+        "description": "Apply project-level rules for pruning a project in the vendor directory."
     }
 }

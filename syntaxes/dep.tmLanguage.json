@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.dep",
-				"match": "\\b(required|ignored|constraint|override|metadata|name|source|branch|revision|version)\\b"
+				"match": "\\b(required|ignored|constraint|override|metadata|name|source|branch|revision|version|prune|non-go|unused-packages|go-tests|project)\\b"
 			}]
 		}
 	},
