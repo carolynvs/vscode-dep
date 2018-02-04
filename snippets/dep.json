@@ -25,11 +25,11 @@
         "prefix": "constraint",
         "body": [
             "[[constraint]]",
-            "  name = \"${1:github.com/example/pkg}\"",
-            "  source = \"${2:https://github.com/example-fork/pkg.git}\"",
-            "  branch = \"${3:master}\"",
-            "  revision = \"${4:abc1234}\"",
-            "  version = \"${5:>=1.0.0,<2.0.0}\"",
+            "\tname = \"${1:github.com/example/pkg}\"",
+            "\tsource = \"${2:https://github.com/example-fork/pkg.git}\"",
+            "\tbranch = \"${3:master}\"",
+            "\trevision = \"${4:abc1234}\"",
+            "\tversion = \"${5:>=1.0.0,<2.0.0}\"",
             "",
             "${6}"
         ],
@@ -39,11 +39,11 @@
         "prefix": "override",
         "body": [
             "[[override]]",
-            "  name = \"${1:github.com/example/pkg}\"",
-            "  source = \"${2:https://github.com/example-fork/pkg.git}\"",
-            "  branch = \"${3:master}\"",
-            "  revision = \"${4:abc1234}\"",
-            "  version = \"${5:>=1.0.0,<2.0.0}\"",
+            "\tname = \"${1:github.com/example/pkg}\"",
+            "\tsource = \"${2:https://github.com/example-fork/pkg.git}\"",
+            "\tbranch = \"${3:master}\"",
+            "\trevision = \"${4:abc1234}\"",
+            "\tversion = \"${5:>=1.0.0,<2.0.0}\"",
             "",
             "${6}"
         ],
@@ -53,7 +53,7 @@
         "prefix":"metadata (global)",
         "body": [
             "[metadata]",
-            "  ${1:key} = \"${2:value}\"",
+            "\t${1:key} = \"${2:value}\"",
             "",
             "${3}"
         ],
@@ -63,7 +63,7 @@
         "prefix":"metadata (constraint)",
         "body": [
             "[constraint.metadata]",
-            "  ${1:key} = \"${2:value}\"",
+            "\t${1:key} = \"${2:value}\"",
             "",
             "${3}"
         ],
@@ -73,9 +73,9 @@
         "prefix": "prune (global)",
         "body": [
             "[prune]",
-            "  non-go = ${1:true}",
-            "  go-tests = ${2:true}",
-            "  unused-packages = ${3:true}",
+            "\tnon-go = ${1:true}",
+            "\tgo-tests = ${2:true}",
+            "\tunused-packages = ${3:true}",
             "",
             "${4}"
         ],
@@ -85,10 +85,10 @@
         "prefix": "prune (project)",
         "body": [
             "[[prune.project]]",
-            "  name = \"${1:github.com/example/pkg}\"",
-            "  non-go = ${2:true}",
-            "  go-tests = ${3:true}",
-            "  unused-packages = ${4:true}",
+            "\tname = \"${1:github.com/example/pkg}\"",
+            "\tnon-go = ${2:true}",
+            "\tgo-tests = ${3:true}",
+            "\tunused-packages = ${4:true}",
             "",
             "${5}"
         ],
