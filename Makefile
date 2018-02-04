@@ -6,3 +6,5 @@ package:
 
 publish:
 	docker run --rm -it -v `pwd`:/app carolynvs/vsce publish
+
+.PHONY: vsce package publish
