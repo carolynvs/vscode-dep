@@ -1,5 +1,10 @@
 # Change Log
 
+## v0.1.0
+- Support for dep v0.4.0 which added `prune` configuration options.
+- Insert a newline after the inserted snipppet.
+- Use tabs instead of spaces to respect the user defined tab settings.
+
 ## v0.0.3
 - Obligatory demo gif
 

@@ -11,6 +11,7 @@
   * `constraint`
   * `override`
   * `metadata`, both global and constraint specific
+  * `prune`, both global and project specific
  
 ## How to use this extension?
 
